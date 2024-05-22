@@ -55,10 +55,10 @@ function App() {
               />
             </Box>
             <SortSelector
+              sortOrder={gameQuery.sortOrder}
               onSelectSortOrder={(sortOrder) =>
                 setGameQuery({ ...gameQuery, sortOrder })
               }
-              sortOrder={""}
             />
           </Flex>
         </Box>
